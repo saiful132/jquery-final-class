@@ -14,40 +14,40 @@
 		<h1 class="clc">Calculator</h1>
 		<div class="mainDiv">
 			<div class="inputDiv">
-				<input type="text" />
+				<input style="font-weight: 900" id="textFild" type="text" />
 			</div>
 			<div class="div1">
-				<button>C</button>
+				<button onclick="cleanResult();">C</button>
 				<button>+/-</button>
-				<button>%</button>
-				<button>/</button>
+				<button onclick="insertNumbers('%')">%</button>
+				<button onclick="insertNumbers('/')">/</button>
 			</div>
 			<div class="div2">
-				<button>7</button>
-				<button>8</button>
-				<button>9</button>
-				<button>X</button>
+				<button onclick="insertNumbers(7)">7</button>
+				<button onclick="insertNumbers(8)">8</button>
+				<button onclick="insertNumbers(9)">9</button>
+				<button onclick="insertNumbers('*')">X</button>
 			</div>
 			<div class="div3">
-				<button>4</button>
-				<button>5</button>
-				<button>6</button>
-				<button>-</button>
+				<button onclick="insertNumbers(4)">4</button>
+				<button onclick="insertNumbers(5)">5</button>
+				<button onclick="insertNumbers(6)">6</button>
+				<button onclick="insertNumbers('-')">-</button>
 			</div>
 			<div class="div4">
-				<button>1</button>
-				<button>2</button>
-				<button>3</button>
-				<button>+</button>
+				<button onclick="insertNumbers(1)">1</button>
+				<button onclick="insertNumbers(2)">2</button>
+				<button onclick="insertNumbers(3)">3</button>
+				<button onclick="insertNumbers('+')">+</button>
 			</div>
 			<div class="div5">
-				<button>0</button>
-				<button>.</button>
+				<button onclick="insertNumbers(0)">0</button>
+				<button onclick="insertNumbers('.')">.</button>
 				<button>DEL</button>
-				<button>=</button>
+				<button onclick="finalResult()">=</button>
 			</div>
 		</div>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
