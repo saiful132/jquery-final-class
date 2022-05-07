@@ -1,4 +1,4 @@
-var result = $("#textFild");
+
 
 function insertNumbers(number) {
 	var existingNumber = $("#textFild").val();
@@ -15,10 +15,11 @@ function finalResult() {
 }
 
 
+
 function deleteNumber(){
-	var present = result.val()
-    if(present!=''){
-		result.val(present.slice(0, -1))
+	
+    if($("#textFild").val()!=''){
+		$("#textFild").val($("#textFild").val().slice(0, -1))
 	}
     
 }
